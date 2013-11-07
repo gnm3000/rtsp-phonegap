@@ -1,31 +1,14 @@
-<!doctype html>
 <html>
-<head>
-    <title>Test RTSP on Android using PhoneGap</title>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8" src="video.js"></script>
-</head>
-<body>
-    <h2>Test video </h2>
+    <head>
+        <title>YouTube video</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <script src="cordova.js"></script>
+    </head>
+    <body>
 
-    <OBJECT classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
-         codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab"
-         width="320" height="240" id="vlc" events="True">
-       <param name="Src" value="rtsp://46.249.213.87:554/playlists/bollywood-hits_hvga.hpl.3gp" />
-       <param name="ShowDisplay" value="True" />
-       <param name="AutoLoop" value="False" />
-       <param name="AutoPlay" value="True" />
-       <embed id="vlcEmb"  type="application/x-google-vlc-plugin" version="VideoLAN.VLCPlugin.2" autoplay="yes" loop="no" width="320" height="240"
-         target="rtsp://46.249.213.87:554/playlists/bollywood-hits_hvga.hpl.3gp" ></embed>
-    </OBJECT>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/9HDeEbJyNK8" frameborder="0" allowfullscreen></iframe>
 
-
-<h2>Flash play</h2>
-<iframe width="320" height="240s" src="http://www.youtube.com/embed/9HDeEbJyNK8" 
- frameborder="0" allowfullscreen></iframe>
-
-
-</body>
+    </body>
 </html>
-
-
