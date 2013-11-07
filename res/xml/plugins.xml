@@ -1,1 +1,1 @@
-<plugin name="VideoPlayer" value="com.phonegap.plugins.video.VideoPlayer"/>
+<plugin name="VideoPlayer" value="com.hung.plugins.video.VideoPlayer"/>
