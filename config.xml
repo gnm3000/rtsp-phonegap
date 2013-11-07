@@ -1,0 +1,25 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.hung.example"
+        versionCode="10" 
+        version   = "1.0.0">
+
+  
+     <name>Hung RTSP App</name>
+
+    <description>
+        An example for phonegap build docs. 
+    </description>
+
+    <author email="hungdamduy@gmail.com" href="http://phonegap.com">
+       HUng Dam
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="WebViewBounce" value="true" />
+    <gap:platform name="android" />
+    
+    <gap:plugin name="com.phonegap.plugins.video" />
+</widget>
