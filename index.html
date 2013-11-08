@@ -7,8 +7,23 @@
         <script src="cordova.js"></script>
     </head>
     <body>
+        <h2>Test video </h2>
 
-        <iframe width="320" height="240" src="http://www.youtube.com/embed/9HDeEbJyNK8?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
+         codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab"
+         width="320px" height="240px" id="vlc" events="True">
+       <param name="Src" value="rtsp://46.249.213.87:554/playlists/bollywood-hits_hvga.hpl.3gp" />
+       <param name="ShowDisplay" value="True" />
+       <param name="AutoLoop" value="False" />
+       <param name="AutoPlay" value="True" />
+       <embed id="vlcEmb"  type="application/x-google-vlc-plugin" version="VideoLAN.VLCPlugin.2" autoplay="yes" loop="no" width="320px" height="240px"
+         target="rtsp://46.249.213.87:554/playlists/bollywood-hits_hvga.hpl.3gp" ></embed>
+    </object>
+
+<h2>Flash play</h2>
+<iframe width="320" height="240s" src="http://www.youtube.com/embed/9HDeEbJyNK8?autoplay=1" 
+ frameborder="0" allowfullscreen></iframe>
+
 
     </body>
 </html>
