@@ -18,7 +18,7 @@
       playlist: [{
 sources : [
 
-{ file: 'rtmp://streaming.dumistream.com/shoutcast/prueba.stream' }
+{ file: 'rtmp://streaming2.dumidehost.com/vod/litoral-productivo-ciclo-2014-Programa-13.mp4' }
 ],
 title: "Reproducir"
 }],
@@ -35,19 +35,8 @@ title: "Reproducir"
     });
 </script>
 
-<p style="font-size:15px">
-  <a onclick='jwplayer().play()'>Play</a> |   <a onclick='jwplayer().stop()'>Stop</a> |
-  <a onclick='alert(jwplayer().getVolume())'>Get volume</a>
-  <a onclick="volume()">Set Volume</a>
-</p>
-<script type="text/javascript">
-  function volume(){
-    var volume = prompt("Ingresa el volumen de 0 a 100", 50);
-    if(volume!=""){
-      jwplayer().setVolume(volume);
-    }
-  }
-</script>
+
+
 <!--
 <h2>DumiStream Radio</h2>
 <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
