@@ -5,23 +5,41 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <script src="cordova.js"></script>
+        <script src="http://jwpsrv.com/library/rhAZWBGwEeSl9SIACyaB8g.js"></script>
     </head>
     <body>
         <h2>Test video </h2>
 
-    <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
-         codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab"
-         width="320px" height="240px" id="vlc" events="True">
-       <param name="Src" value="rtsp://46.249.213.87:554/playlists/bollywood-hits_hvga.hpl.3gp" />
-       <param name="ShowDisplay" value="True" />
-       <param name="AutoLoop" value="False" />
-       <param name="AutoPlay" value="True" />
-       <embed id="vlcEmb"  type="application/x-google-vlc-plugin" version="VideoLAN.VLCPlugin.2" autoplay="yes" loop="no" width="320px" height="240px"
-         target="rtsp://46.249.213.87:554/playlists/bollywood-hits_hvga.hpl.3gp" ></embed>
-    </object>
+   <div  id='playerFCWoXRUXjwiZ'></div>
 
-<h2>Flash play</h2>
-<iframe width="320" height="240s" src="http://www.youtube.com/embed/9HDeEbJyNK8?autoplay=1" 
+<script type='text/javascript'>
+//        file: 'rtmp://streaming2.dumidehost.com/vod/litoral-productivo-ciclo-2014-Programa-13.mp4',
+    jwplayer('playerFCWoXRUXjwiZ').setup({
+      playlist: [{
+sources : [
+
+{ file: 'http://streaming2.dumidehost.com:1935/vod/litoral-productivo-ciclo-2014-Programa-13.mp4/playlist.m3u8' }
+],
+title: "Reproducir"
+}],
+        image: 'http://4.bp.blogspot.com/_Fq51t1xjIts/TJ3rk6dFGLI/AAAAAAAAA0I/9lrTw5zAePo/s1600/312trwz%5B1%5D.jpg',
+        title: 'NativaTV.com Online',
+        width: '70%',
+        aspectratio: '4:3',
+        autostart: 'true',
+        repeat: 'true',
+        androidhls: "true",
+        fallback: "false",
+        primary:"flash"
+    });
+</script>
+
+<h2>Prueba play</h2>
+<iframe width="320" height="240s" src="prueba.radiosimple.dumistream.com/iframe" 
+ frameborder="0" allowfullscreen></iframe>
+
+<h2>Prueba play muses</h2>
+<iframe width="320" height="240s" src="prueba.radiosimple.dumistream.com" 
  frameborder="0" allowfullscreen></iframe>
 
 
