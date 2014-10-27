@@ -1,4 +1,4 @@
 rtsp-phonegap
 =============
 
-Test Playing RTSP video from IP Camera to build Android App by using PhonGap
+Test PhoneGap Application using JWPlayer, AAC Streaming and PhoneGap.

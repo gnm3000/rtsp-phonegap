@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>YouTube video</title>
+        <title>DumiStream</title>
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -8,7 +8,7 @@
         <script src="http://jwpsrv.com/library/rhAZWBGwEeSl9SIACyaB8g.js"></script>
     </head>
     <body>
-        <h2>Test video </h2>
+        <h2>DumiStream Video</h2>
 
    <div  id='playerFCWoXRUXjwiZ'></div>
 
@@ -24,7 +24,7 @@ title: "Reproducir"
 }],
         image: 'http://4.bp.blogspot.com/_Fq51t1xjIts/TJ3rk6dFGLI/AAAAAAAAA0I/9lrTw5zAePo/s1600/312trwz%5B1%5D.jpg',
         title: 'NativaTV.com Online',
-        width: '70%',
+        width: '100%',
         aspectratio: '4:3',
         autostart: 'true',
         repeat: 'true',
@@ -33,15 +33,23 @@ title: "Reproducir"
         primary:"flash"
     });
 </script>
-
-<h2>Prueba play</h2>
-<iframe width="320" height="240s" src="http://prueba.radiosimple.dumistream.com/iframe" 
- frameborder="0" allowfullscreen></iframe>
-
-<h2>Prueba play muses</h2>
-<iframe width="320" height="240s" src="http://prueba.radiosimple.dumistream.com" 
- frameborder="0" allowfullscreen></iframe>
-
+<h2>DumiStream Radio</h2>
+<script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
+<script type="text/javascript">
+MRP.insert({
+'url':'http://streaming.dumidehost.com:9000/;',
+'lang':'es',
+'codec':'aac',
+'volume':80,
+'autoplay':true,
+'buffering':5,
+'title':'Radio Prueba',
+'bgcolor':'#1C93C9',
+'skin':'simple-blue',
+'width':300,
+'height':122
+});
+</script>
 
     </body>
 </html>

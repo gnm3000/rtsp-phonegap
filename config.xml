@@ -6,14 +6,14 @@
         version   = "1.0.0">
 
   
-     <name>Hung RTSP App</name>
+     <name>DumiStream</name>
 
     <description>
-        An example for phonegap build docs. 
+        DumiStream Media Application. 
     </description>
 
-    <author email="hungdamduy@gmail.com" href="http://phonegap.com">
-       HUng Dam
+    <author email="gnm3000@gmail.com" href="http://phonegap.com">
+       German Montenegro
     </author>
     <content src="index.html" />
     <access origin="*" />
