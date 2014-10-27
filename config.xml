@@ -20,6 +20,6 @@
     <preference name="Fullscreen" value="true" />
     <preference name="WebViewBounce" value="true" />
     <gap:platform name="android" />
-    
+     <icon src="icon.png" />
     
 </widget>
