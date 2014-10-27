@@ -8,9 +8,9 @@
         <script src="http://jwpsrv.com/library/rhAZWBGwEeSl9SIACyaB8g.js"></script>
     </head>
     <body>
-        <h2>DumiStream Video</h2>
+        
 
-   <div  id='playerFCWoXRUXjwiZ'></div>
+   <div  id='playerFCWoXRUXjwiZ' style="width:5px;height:5px"></div>
 
 <script type='text/javascript'>
 //        file: 'rtmp://streaming2.dumidehost.com/vod/litoral-productivo-ciclo-2014-Programa-13.mp4',
@@ -18,13 +18,14 @@
       playlist: [{
 sources : [
 
-{ file: 'http://streaming2.dumidehost.com:1935/vod/litoral-productivo-ciclo-2014-Programa-13.mp4/playlist.m3u8' }
+{ file: 'rtmp://streaming.dumistream.com/shoutcast/prueba.stream' }
 ],
 title: "Reproducir"
 }],
         image: 'http://4.bp.blogspot.com/_Fq51t1xjIts/TJ3rk6dFGLI/AAAAAAAAA0I/9lrTw5zAePo/s1600/312trwz%5B1%5D.jpg',
         title: 'NativaTV.com Online',
-        width: '100%',
+        width: '320',
+        height: "30",
         aspectratio: '4:3',
         autostart: 'true',
         repeat: 'true',
@@ -33,22 +34,21 @@ title: "Reproducir"
         primary:"flash"
     });
 </script>
-
-<h2>DumiStream JWPlayer Radio</h2>
-
-   <div  id='playerFCWoXRUXjwiQ'></div>
-
-<script type='text/javascript'>
-//        file: 'rtmp://streaming2.dumidehost.com/vod/litoral-productivo-ciclo-2014-Programa-13.mp4',
-    jwplayer('playerFCWoXRUXjwiQ').setup({
-        file:'http://streaming.dumidehost.com:9000/;',
-        title: 'Radio Prueba',
-        width: 320,
-        height:30
-    });
+<h2>DumiStream Radio Player</h2>
+<p style="font-size:15px">
+  <a onclick='jwplayer().play()'>Play</a> |   <a onclick='jwplayer().stop()'>Stop</a> |
+  <a onclick='alert(jwplayer().getVolume())'>Get volume</a>
+  <a onclick="volume()">Set Volume</a>
+</p>
+<script type="text/javascript">
+  function volume(){
+    var volume = prompt("Ingresa el volumen de 0 a 100", 50);
+    if(volume!=""){
+      jwplayer().setVolume(volume);
+    }
+  }
 </script>
-
-
+<!--
 <h2>DumiStream Radio</h2>
 <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
 <script type="text/javascript">
@@ -66,6 +66,16 @@ MRP.insert({
 'height':122
 });
 </script>
-
+-->
+<style type="text/css">
+#playerFCWoXRUXjwiZ{
+   position: absolute;
+    top:-400;
+}
+  #playerFCWoXRUXjwiZ_wrapper{
+   
+  }
+  a{text-decoration: underline;}
+</style>
     </body>
 </html>
